@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css_pages/CddM_Tun.css">
+    <title>Sul_Mediah</title>
+</head>
+<body>
+    <header>
+        <a class="logo" id="logo">Nyts</a>
+        <div class="float_page" id="float_page">
+            <ul>
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="../index.html #social">Social</a></li>
+                <li><a href="../index.html #contato">Contatos</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="sec" id="sec">
+        <h2>Rotações Elixir / Spot - Cidades dos Mortos</h2>
+        <h2>Rotações Elixir / Spot - Ruínas de Tungrad</h2>
+    </div>
+    <script>
+        let navbar = document.getElementById('float_page')
+        window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        navbar.style.backgroundColor = `rgb(0, 0, 0, ${value * 0.001})`;
+        })
+        </script>
+</body>
+</html>

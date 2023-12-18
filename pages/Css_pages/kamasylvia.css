@@ -5,11 +5,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#2b1055,#7597de);
+    background: #1c0522;
 }
 header{
     position: absolute;
@@ -121,17 +122,16 @@ section img#montain_front{
     margin-bottom: 10px;
     color: #fff;
 }
-.sec a{
+.sec h1, h5{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.0em;
     padding: 6px 15px;
     border-radius: 20px;
     color: #fff;
 }
-.sec a:hover{
+.sec h1{
     background: #fff;
     color: #2b1055;
-    transition: 0.2s;
 }
 .footer{
     display: flex;
@@ -144,13 +144,7 @@ section img#montain_front{
     z-index: 11;
 }
 .footer h2{
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #fff;
-}
-.footer h4{
-    font-size: 1.5em;
-    margin-top: 10px;
+    font-size: 3.5em;
     margin-bottom: 10px;
     color: #fff;
 }
@@ -174,5 +168,61 @@ section img#montain_front{
     background-color: rgb(0, 0, 0, 0);
     border-radius: 0px 0px 0px 20px;
     padding-bottom: 15px;
-
+}
+tr, td, table, th{
+    color: #fff;
+    text-align: left;
+    font-size: 0.8rem;
+}
+th, td{
+    background-color: rgba(121, 121, 121, 0.11);
+    border-radius: 5px;
+    border: 1px #fff solid;
+    padding: 0.3em;
+}
+.block{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+.item{
+    grid-column: span 2;
+}
+th{
+    color: #1c0522;
+    background-color: #fff;
+}
+.r{
+    text-decoration: none;
+    color: rgb(255, 107, 107);
+}
+.b{
+    text-decoration: none;
+    color: rgb(146, 146, 255);
+}
+.g{
+    text-decoration: none;
+    color: rgb(77, 255, 77);
+}
+.y{
+    text-decoration: none;
+    color: rgb(255, 255, 91);
+}
+.p{
+    text-decoration: none;
+    color: rgba(255, 0, 255, 0.616);
+}
+.b2{
+    color: rgb(46, 119, 255);
+}
+p{
+    font-size: 1em;
+    color: #fff;
+}
+th a{
+    color: #2b1055;
+}
+th a:hover{
+    color: red;
+    transition: 0.3s;
 }
